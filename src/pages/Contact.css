@@ -1,0 +1,22 @@
+.container {
+    background-color: #f4f6f8;
+    padding: 4rem 2rem;
+    min-height: 100vh;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    border-radius: 8px;
+  }
+  
+  .contact-form button {
+    background-color: #0077cc;
+    border-radius: 8px;
+  }
+  
+  .contact-form button:hover {
+    background-color: #005fa3;
+  }
+  
