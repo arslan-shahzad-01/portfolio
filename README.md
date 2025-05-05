@@ -74,17 +74,25 @@ Runs the test runner in interactive watch mode.
 - Summary of your skills and focus areas.
 - Quick overview of what the portfolio offers.
 
+  ![Screenshot 2025-05-05 221744](https://github.com/user-attachments/assets/25eb39f0-d891-48f5-b694-b59c80161312)
+
 ### 🎓 Education
 - Academic background.
 - Details of degrees, institutions, and timelines.
+
+  ![Screenshot 2025-05-05 221809](https://github.com/user-attachments/assets/c4ccb24a-492f-4fd8-a2bb-b352480e3ddc)
 
 ### 💼 Projects
 - Showcase of personal and academic projects.
 - Each project includes title, description, and optionally links or images.
 
+  ![Screenshot 2025-05-05 221827](https://github.com/user-attachments/assets/d7ea7f0f-f0d2-431d-b4b9-a7431fa2f4a7)
+
 ### 📞 Contact
 - Form or contact details (email, LinkedIn, etc.).
 - Encouragement to connect or collaborate.
+
+  ![Screenshot 2025-05-05 221842](https://github.com/user-attachments/assets/7be48620-9ab5-479b-b374-e5a4ea6d6ce9)
 
 ---
 
