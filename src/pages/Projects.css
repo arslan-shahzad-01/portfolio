@@ -1,0 +1,48 @@
+.projects-section {
+  background-color: #f9f9f9; /* Match the background color from .education-section */
+  padding: 4rem 2rem; /* Match the padding from .education-section */
+  min-height: 100vh;
+  text-align: center; /* Add text alignment for consistency */
+}
+
+.project-title {
+  font-size: 2.5rem; /* Keep the title size the same */
+  color: #0077cc; /* Keep the color the same */
+  margin-bottom: 3rem; /* Increase the margin to match .section-title's bottom margin */
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background-color: #ffffff; /* Keep the same background color */
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Keep the hover effect the same */
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.project-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.project-year {
+  font-size: 1rem;
+  color: #999;
+}
