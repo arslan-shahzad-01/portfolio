@@ -1,0 +1,59 @@
+/* Sidebar Container */
+.sidebar {
+    width: 240px;
+    position: fixed;
+    top: 64px; /* Offset for AppBar */
+    left: 0;
+    bottom: 0;
+    background-color: #ffffff; /* White background */
+    color: #0077cc; /* Blue text */
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1200; /* Ensure the sidebar stays on top */
+  }
+  
+  /* Sidebar when it's open (on desktop or mobile) */
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  
+  /* Sidebar for Mobile (temporary) */
+  .sidebar.mobile {
+    transform: translateX(-100%);
+  }
+  
+  /* List Items inside Sidebar */
+  .sidebar .list-item {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    color: #0077cc; /* Blue text */
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* Hover effect for list items */
+  .sidebar .list-item:hover {
+    background-color: #f0f8ff; /* Very light blue for hover */
+  }
+  
+  /* List Item Icons */
+  .sidebar .list-item .MuiListItemIcon-root {
+    color: #0077cc; /* Blue icons */
+    margin-right: 10px;
+  }
+  
+  /* Sidebar Menu Button (Hamburger Icon) */
+  .sidebar-menu-btn {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    color: #0077cc; /* Blue hamburger icon */
+    z-index: 1300; /* Ensure it stays above the sidebar */
+  }
+  
+  /* For Mobile */
+  .sidebar.mobile.open {
+    transform: translateX(0);
+  }
+  

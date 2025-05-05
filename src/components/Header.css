@@ -1,0 +1,44 @@
+/* Header Container */
+.appBar {
+    position: fixed;
+    z-index: 1;
+    background-color: #0077cc; /* Blue background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  /* Toolbar Layout */
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px; /* Add padding for spacing */
+  }
+  
+  /* Typography Style */
+  .typography {
+    color: #ffffff; /* White text color */
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+  
+  /* Icon Button Style */
+  .iconButton {
+    padding: 0;
+  }
+  
+  /* Menu Style */
+  .menu {
+    background-color: #ffffff; /* White background for the menu */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  /* Menu Item Style */
+  .menuItem {
+    color: #333; /* Dark text color for menu items */
+  }
+  
+  /* Avatar in Header */
+  .avatar {
+    background-color: #ffffff; /* White background for the avatar */
+  }
+  

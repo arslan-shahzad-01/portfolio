@@ -9,6 +9,7 @@ import {
   Menu,
   MenuItem,
 } from '@mui/material';
+import './Header.css'; // Import the CSS file
 
 const Header = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -23,21 +24,15 @@ const Header = () => {
   };
 
   return (
-    <AppBar
-      position="fixed"
-      sx={{
-        zIndex: (theme) => theme.zIndex.drawer + 1,
-        backgroundColor: '#1976d2',
-      }}
-    >
-      <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
-        <Typography variant="h6" noWrap component="div">
+    <AppBar position="fixed" className="appBar">
+      <Toolbar className="toolbar">
+        <Typography variant="h6" noWrap component="div" className="typography">
           Muhammad Arslan Shahzad
         </Typography>
 
         <Box>
-          <IconButton onClick={handleAvatarClick} sx={{ M: 0 }}>
-            <Avatar alt="Profile" src="/static/images/avatar/6.jpg" />
+          <IconButton onClick={handleAvatarClick} className="iconButton">
+            <Avatar alt="Profile" src="/static/images/avatar/1.jpg" />
           </IconButton>
 
           <Menu
@@ -47,8 +42,9 @@ const Header = () => {
             onClick={handleClose}
             transformOrigin={{ horizontal: 'right', vertical: 'top' }}
             anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
+            className="menu"
           >
-            <MenuItem>Logout</MenuItem>
+            <MenuItem className="menuItem">Logout</MenuItem>
           </Menu>
         </Box>
       </Toolbar>
