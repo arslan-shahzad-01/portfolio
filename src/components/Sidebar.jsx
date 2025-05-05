@@ -1,20 +1,22 @@
 import React, { useState } from 'react';
 import { Drawer, List, ListItem, ListItemIcon, ListItemText, IconButton, useMediaQuery } from '@mui/material';
+import { Link } from 'react-router-dom';
 import HomeIcon from '@mui/icons-material/Home';
 import SchoolIcon from '@mui/icons-material/School';
 import WorkIcon from '@mui/icons-material/Work';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import { Menu as MenuIcon } from '@mui/icons-material';
+import './Sidebar.css'; // Import the CSS file
 
 const Sidebar = ({ drawerWidth }) => {
   const [open, setOpen] = useState(true);
   const isMobile = useMediaQuery('(max-width:600px)'); // Media query for mobile view
 
   const menuItems = [
-    { text: 'Home', icon: <HomeIcon /> },
-    { text: 'Education', icon: <SchoolIcon /> },
-    { text: 'Projects', icon: <WorkIcon /> },
-    { text: 'Contact', icon: <ContactMailIcon /> },
+    { text: 'Home', icon: <HomeIcon />, link: '/' },
+    { text: 'Education', icon: <SchoolIcon />, link: '/education' },
+    { text: 'Projects', icon: <WorkIcon />, link: '/projects' },
+    { text: 'Contact', icon: <ContactMailIcon />, link: '/contact' },
   ];
 
   const handleDrawerToggle = () => {
@@ -30,35 +32,29 @@ const Sidebar = ({ drawerWidth }) => {
           aria-label="menu"
           sx={{ marginLeft: 2 }}
           onClick={handleDrawerToggle}
+          className="sidebar-menu-btn" // Add this class for the menu button
         >
           <MenuIcon />
         </IconButton>
       )}
 
-      <Drawer
-        variant={isMobile ? 'temporary' : 'permanent'}
-        open={isMobile ? open : true}
-        onClose={handleDrawerToggle}
-        anchor="left"
-        sx={{
-          width: drawerWidth,
-          flexShrink: 0,
-          [`& .MuiDrawer-paper`]: {
-            width: drawerWidth,
-            boxSizing: 'border-box',
-            mt: '64px', // Offset for AppBar
-          },
-        }}
-      >
+      {/* Sidebar Drawer Component */}
+      <div className={`sidebar ${isMobile ? (open ? 'open' : 'mobile') : ''}`}>
         <List>
           {menuItems.map((item, index) => (
-            <ListItem button key={index}>
+            <ListItem
+              button
+              key={index}
+              component={Link}
+              to={item.link}
+              className="list-item" // Add this class for styling
+            >
               <ListItemIcon>{item.icon}</ListItemIcon>
               <ListItemText primary={item.text} />
             </ListItem>
           ))}
         </List>
-      </Drawer>
+      </div>
     </>
   );
 };
